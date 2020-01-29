@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-size: 16px; }
+  @media screen and (max-width: 724px) {
+    html,
+    body {
+      font-size: 14px; } }
+  @media screen and (max-width: 560px) {
+    html,
+    body {
+      font-size: 12px; } }
+
+.wrapper {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding: 90px;
+  padding-top: 40px; }
+  @media screen and (max-width: 660px) {
+    .wrapper {
+      padding: 20px; } }
+
+.button {
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 5px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(174, 181, 185, 0.5);
+  cursor: pointer; }
+  .button:hover {
+    opacity: 0.8;
+    background-color: rgba(231, 0, 39, 0.5); }
+
+.inactive {
+  background: rgba(76, 82, 85, 0.4);
+  color: rgba(255, 255, 255, 0.4); }
+
+.control-block {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff; }
+  .control-block__buttons {
+    height: 44px;
+    display: flex;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem; }
+  .control-block__button_refresh {
+    width: 44px;
+    height: 44px;
+    background: url(assets/images/refreshButton.svg) 100% 100% no-repeat no-repeat;
+    cursor: pointer; }
+  .control-block__button_lang {
+    width: 71px;
+    display: flex;
+    margin-left: 15px; }
+  .control-block__buttons_temperature-units {
+    display: flex;
+    margin-left: 15px; }
+  .control-block__button_refresh,
+  .control-block__button_lang div,
+  .control-block__buttons_temperature-units div {
+    height: 44px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer; }
+  .control-block__search {
+    height: 44px;
+    display: flex; }
+  .control-block__search_input {
+    width: 234px;
+    padding-left: 15px;
+    background: rgba(76, 82, 85, 0.4);
+    border: none;
+    color: white;
+    outline-width: 0;
+    font-size: 1.188rem;
+    line-height: 44px; }
+  .control-block__search_input::-webkit-input-placeholder {
+    font-size: 1rem;
+    line-height: 1.188rem;
+    color: white;
+    padding-left: 2px; }
+  .control-block__search_input::-moz-placeholder {
+    font-size: 1rem;
+    line-height: 1.188rem;
+    color: white;
+    padding-left: 4px; }
+  .control-block__search_voice {
+    width: 40px;
+    background: rgba(76, 82, 85, 0.4) url(assets/images/microphone.svg) no-repeat 50% 50%;
+    outline-width: 0;
+    border: none;
+    cursor: pointer; }
+  .control-block__search_button {
+    width: 101px;
+    text-align: center;
+    line-height: 44px;
+    background: rgba(174, 181, 185, 0.5);
+    cursor: pointer; }
+  @media screen and (max-width: 724px) {
+    .control-block {
+      flex-wrap: wrap; }
+      .control-block__buttons_temperature-units {
+        margin-right: 20px; }
+      .control-block__search {
+        margin-top: 30px; } }
+  @media screen and (max-width: 560px) {
+    .control-block__search_input {
+      width: 180px; }
+    .control-block__search_button {
+      width: 80px; } }
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 57px; }
+
+@media screen and (max-width: 1220px) {
+  .weather {
+    margin: 0 auto; } }
+
+.weather-today-block {
+  color: white;
+  width: 100%; }
+  .weather-today-block__place_city {
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .weather-today-block__datetime {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.813rem; }
+  .weather-today-block__info {
+    display: flex;
+    justify-content: space-around; }
+  .weather-today-block__info_temperature {
+    font-size: 235px;
+    line-height: 350px; }
+  .weather-today-block__info_icon {
+    width: 155px;
+    height: 155px; }
+  .weather-today-block__info_forecast {
+    text-transform: uppercase; }
+  .weather-today-block__info_list {
+    margin-top: 20px;
+    width: 250px;
+    margin-left: 58px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 37px; }
+  @media screen and (max-width: 560px) {
+    .weather-today-block {
+      flex-wrap: wrap; }
+      .weather-today-block__info_temperature {
+        font-size: 125px;
+        line-height: 200px; }
+      .weather-today-block__info_icon {
+        width: 100px;
+        height: 100px; }
+      .weather-today-block__info_list {
+        width: 400px; }
+      .weather-today-block__info {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between; } }
+
+.weather-forecast-block {
+  padding-top: 25px;
+  display: flex;
+  width: 100%;
+  color: white; }
+  .weather-forecast-block__info {
+    font-weight: bold;
+    font-size: 1.375rem;
+    line-height: 1.688rem;
+    padding-right: 50px;
+    text-transform: uppercase; }
+  .weather-forecast-block__info_forecast {
+    display: flex; }
+  .weather-forecast-block__info_temperature {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 98px; }
+  .weather-forecast-block__info_icon {
+    margin: 10px 0 0 5px;
+    width: 60px;
+    height: 60px;
+    background: rgba(76, 82, 85, 0.4); }
+  @media screen and (max-width: 560px) {
+    .weather-forecast-block__info {
+      margin-top: 10px;
+      width: 200px;
+      margin: 0 auto; }
+    .weather-forecast-block__info_temperature {
+      font-size: 65px; }
+    .weather-forecast-block__info_temperature {
+      width: 50px;
+      height: 50px; } }
+
+.geolocation-data-block__map {
+  width: 375px;
+  height: 400px;
+  margin-top: 75px;
+  border-radius: 25px 25px 0 25px;
+  background: #4c5255; }
+
+.geolocation-data-block__coordinates {
+  height: 53px;
+  margin: 20px 0 0 30%;
+  text-align: end;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: white; }
+
+@media screen and (max-width: 1220px) {
+  .geolocation-data-block {
+    margin: 0 auto; } }
+
+@media screen and (max-width: 560px) {
+  .geolocation-data-block__map {
+    width: 288px;
+    height: 207px;
+    margin-top: 40px; }
+  .geolocation-data-block__coordinates {
+    width: 288px;
+    margin: 20px 0 0 0; } }
+

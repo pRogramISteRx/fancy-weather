@@ -1,0 +1,9 @@
+import './js/createHTML.js';
+import './style.scss';
+import './js/getLinkToImage.js';
+import './js/addMap.js';
+import './js/getLocationData.js';
+import './js/search.js';
+import './js/setDate.js';
+import './js/changeTemperatureUnits.js';
+import './js/translate.js';
