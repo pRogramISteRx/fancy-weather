@@ -27,7 +27,7 @@ function fToC(temp) {
 }
 
 export async function getWeatherData(latitude, longitude) {
-  const activeTemperature = localStorage.getItem('temperatureUnits');
+  const activeTemperature = localStorage.getItem('temperatureUnits') || 'celsius';
   const lang = localStorage.getItem('lang') || 'en';
 
   const url = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/1a7242e37b52994b88f5374d9cceb732/${latitude},${longitude}?lang=${lang}`;
