@@ -117,15 +117,17 @@ changeLanguage.addEventListener('change', event => {
   localStorage.setItem('lang', event.target.value);
   updateTranslate();
   getWeatherToTranslateSummary();
-  localStorage.setItem('seatchButton', searchButton.textContent);
+  localStorage.setItem('searchButton', searchButton.textContent);
 });
 
 // eslint-disable-next-line
 window.onload = function() {
+  const lang = localStorage.getItem('lang') || 'en';
+
   changeLanguage.value = this.localStorage.getItem('lang') || 'en';
   if (this.localStorage.getItem('temperatureUnits') === 'fahrenheit') {
     fahrenheitButton.classList.remove('inactive');
     celsiusButton.classList.add('inactive');
   }
-  searchButton.textContent = localStorage.getItem('seatchButton');
+  searchButton.textContent = config[lang].searchButton;
 };
