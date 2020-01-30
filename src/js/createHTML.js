@@ -23,13 +23,13 @@ const markup = `
       <div class="weather">
         <section class="weather-today-block">
           <div class="weather-today-block__place">
-            <h1 class="weather-today-block__place_city">Minsk, Belarus</h1>
+            <h1 class="weather-today-block__place_city"></h1>
           </div>
           <div class="weather-today-block__datetime">
-            <p>Mon 28 October 17:23</p>
+            <p></p>
           </div>
           <div class="weather-today-block__info">
-            <p class="weather-today-block__info_temperature">10&#176;</p>
+            <p class="weather-today-block__info_temperature"></p>
             <div class="weather-today-block__info_forecast">
               <div class="weather-today-block__info_icon"></div>
               <div class="weather-today-block__info_list">
@@ -45,21 +45,21 @@ const markup = `
           <div class="weather-forecast-block__info">
             <p class="weather-forecast-block__info_day">tuesday</p>
             <div class="weather-forecast-block__info_forecast">
-              <p class="weather-forecast-block__info_temperature" id="firstDayTemperature">7&#176;</p>
+              <p class="weather-forecast-block__info_temperature" id="firstDayTemperature"></p>
               <div class="weather-forecast-block__info_icon" id="firstDayIcon"></div>
             </div>
           </div>
           <div class="weather-forecast-block__info">
             <p class="weather-forecast-block__info_day">wednesday</p>
             <div class="weather-forecast-block__info_forecast">
-              <p class="weather-forecast-block__info_temperature" id="secondDayTemperature">6&#176;</p>
+              <p class="weather-forecast-block__info_temperature" id="secondDayTemperature"></p>
               <div class="weather-forecast-block__info_icon" id="secondDayIcon"></div>
             </div>
           </div>
           <div class="weather-forecast-block__info">
             <p class="weather-forecast-block__info_day">thursday</p>
             <div class="weather-forecast-block__info_forecast">
-              <p class="weather-forecast-block__info_temperature" id="thirdDayTemperature">3&#176;</p>
+              <p class="weather-forecast-block__info_temperature" id="thirdDayTemperature"></p>
               <div class="weather-forecast-block__info_icon" id="thirdDayIcon"></div>
             </div>
           </div>
@@ -68,8 +68,8 @@ const markup = `
       <section class="geolocation-data-block">
         <div id="map" class="geolocation-data-block__map"></div>
         <div class="geolocation-data-block__coordinates">
-          <p class="geolocation-data-block__coordinates_latitude"> <span></span> <span id="latValue">53&#176;54'</span> </p>
-          <p class="geolocation-data-block__coordinates_longtitude"> <span></span> <span id="lonValue">27&#176;34'</span> </p>
+          <p class="geolocation-data-block__coordinates_latitude"> <span></span> <span id="latValue"></span> </p>
+          <p class="geolocation-data-block__coordinates_longtitude"> <span></span> <span id="lonValue"></span> </p>
         </div>
       </section>
     </main>
